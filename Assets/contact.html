@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    
+    <!-- Second navbar -->
+    <nav class="justify-content-between justify-content-lg-around second-navbar" id="second-navbar">
+      <!-- For logo -->
+      <div class="nav-logo">
+        <a href="">
+          <img src="./imgs/steakin-logo-dark.png" alt="logo-dark" />
+        </a>
+      </div>
+
+      <!-- Navbar right part -->
+      <div class="navbar-right d-flex justify-content-between">
+        <!-- Pages -->
+        <div class="nav-pages d-none d-lg-flex justify-content-between me-3">
+          <ul>
+            <li id="home-page">
+              <a href="./index.html" class="active-page nav-link" >HOME</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./index.html">Home One</a></li>
+                  <li><a href="">Home Two</a></li>
+                  <li><a href="">Home Three</a></li>
+                  <li><a href="">Loading page</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="pages-page">
+              <a href="" >PAGES</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./our-story.html">Our Story</a></li>
+                  <li><a href="./our-chefs.html">Our Chefs</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Reservation</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">404 page</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="menu-page">
+              <a href="./menu-grid.html" >MENU</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./menu-grid.html">Menu Grid</a></li>
+                  <li><a href="">Menu Board</a></li>
+                  <li><a href="">Menu Gallery</a></li>
+                  <li><a href="">Menu Simple</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="blog-page">
+              <a href="" >BLOG</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="">Blog Grid</a></li>
+                  <li><a href="">Blog Standart</a></li>
+                  <li><a href="">Blog details</a></li>
+        
+                </ul>
+              </div>
+            </li>
+            <li id="shop-page">
+              <a href="" >SHOP</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./shop-full-width.html">Shop Full width</a></li>
+                  <li><a href="">Shop Sidebar Left</a></li>
+                  <li><a href="">Shop Sidebar Right</a></li>
+                  <li><a href="">Shop details/a></li>
+                  <li><a href="">Shop cart></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./contact.html">CONTACT</a>
+            
+            </li>
+            <li>
+              <button class="custom-btn">BOOK A TABLE</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navbar right icon group -->
+        <div
+          class="navbar-right-icons d-flex justify-content-between ms-1"
+        >
+          <span class="d-none d-lg-block">
+            <i class="fa fa-search" style="color: black"></i>
+          </span>
+          <span class="d-none d-lg-block">
+            <i class="fa fa-shopping-cart" style="color: black"></i>
+          </span>
+          <!-- Dropdown -->
+          <span class="nav-dropdown" id="navDropdown">
+            <!-- <i class="fa-solid fa-bars" style="color: #ffff"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+ 
+          </span>
+        </div>
+      </div>
+      
+      <!-- Pages Dropdown start -->
+      <div class="pages-dropdown-menu" id="pagesDropdownMenu">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Home
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./index.html">Home One</a></li>
+                  <li><a href="">Home Two</a></li>
+                  <li><a href="">Home Three</a></li>
+                  <li><a href="">Loading page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Pages
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./our-story.html">Our Story</a></li>
+                  <li><a href="./our-chefs.html">Our Chefs</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Reservation</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">404 page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Menu
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./menu-grid.html">Menu Grid</a></li>
+                  <li><a href="">Menu Board</a></li>
+                  <li><a href="">Menu Gallery</a></li>
+                  <li><a href="">Menu Simple</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Blog
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">Blog Grid</a></li>
+                  <li><a href="">Blog Standart</a></li>
+                  <li><a href="">Blog details</a></li>
+        
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Shop
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./shop-full-width.html">Shop Full width</a></li>
+                  <li><a href="">Shop Sidebar Left</a></li>
+                  <li><a href="">Shop Sidebar Right</a></li>
+                  <li><a href="">Shop details</a></li>
+                  <li><a href="">Shop cart</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item accordion-contact">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" >
+                Contact
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- Pages Dropdown end -->
+    </nav>
+
+    <!-- Header -->
+    <header class="header-2">
+      <!-- Navbar -->
+      <!-- Navbar -->
+      <nav class="d-flex justify-content-between justify-content-lg-around">
+        <!-- For logo -->
+        <div class="nav-logo">
+          <a href="">
+            <img src="./imgs/steakin-logo-light.png" alt="logo-dark" />
+          </a>
+        </div>
+
+        <!-- Navbar right part -->
+        <div class="navbar-right d-flex justify-content-between">
+          <!-- Pages -->
+          <div class="nav-pages d-none d-lg-flex justify-content-between me-3">
+            <ul>
+              <li id="home-page">
+                <a href="./index.html" class="active-page nav-link" >HOME</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./index.html">Home One</a></li>
+                    <li><a href="">Home Two</a></li>
+                    <li><a href="">Home Three</a></li>
+                    <li><a href="">Loading page</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li id="pages-page">
+                <a href="" >PAGES</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./our-story.html">Our Story</a></li>
+                    <li><a href="./our-chefs.html">Our Chefs</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">404 page</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li id="menu-page">
+                <a href="./menu-grid.html" >MENU</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./menu-grid.html">Menu Grid</a></li>
+                    <li><a href="">Menu Board</a></li>
+                    <li><a href="">Menu Gallery</a></li>
+                    <li><a href="">Menu Simple</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li id="blog-page">
+                <a href="" >BLOG</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="">Blog Grid</a></li>
+                    <li><a href="">Blog Standart</a></li>
+                    <li><a href="">Blog details</a></li>
+          
+                  </ul>
+                </div>
+              </li>
+              <li id="shop-page">
+                <a href="" >SHOP</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./shop-full-width.html">Shop Full width</a></li>
+                    <li><a href="">Shop Sidebar Left</a></li>
+                    <li><a href="">Shop Sidebar Right</a></li>
+                    <li><a href="">Shop details</a></li>
+                    <li><a href="">Shop cart</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./contact.html">CONTACT</a>
+              
+              </li>
+              <li>
+                <button class="custom-btn">BOOK A TABLE</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Navbar right icon group -->
+          <div
+            class="navbar-right-icons d-flex justify-content-between ms-1"
+          >
+            <span class="d-none d-lg-block">
+              <i class="fa fa-search" style="color: #ffff"></i>
+            </span>
+            <span class="d-none d-lg-block">
+              <i class="fa fa-shopping-cart" style="color: #ffff"></i>
+            </span>
+            <!-- Dropdown -->
+            <span class="nav-dropdown" id="navDropdown">
+              <!-- <i class="fa-solid fa-bars" style="color: #ffff"></i> -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+   
+            </span>
+          </div>
+        </div>
+
+        
+      </nav>
+      <img src="./imgs/ptitle-contact.jpg" alt="" class="slideI" />
+
+      <div class="over-written">
+        <h3>Contact Us</h3>
+        <h1>Get In Touch</h1>
+
+        <div class="over-written-div">Home /<span>Contact</span></div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="128.125"
+        height="13.5"
+        viewBox="0 0 128.125 13.5"
+        class="header-2-divider"
+        fill="white"
+      >
+        <path
+          data-name="Divder Down"
+          d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z"
+          transform="translate(-735.938 -518)"
+        ></path>
+      </svg>
+    </header>
+
+    <!-- Home Main -->
+    <main>
+      <!-- Section 1 -->
+      <section class="contact-section1">
+        <div class="row contact-section1-container">
+          <!-- Column left -->
+          <div class="col-12 col-lg-6 left-col mb-5">
+            <div class="row">
+              <div class="col-12 contact-section1-description">
+                <p>
+                  Steak In has the perfect place to enjoy fine food, great
+                  cocktails with excellent service, in comfortable atmospheric
+                  surroundings. We have a soft dining room, combined with an
+                  open kitchen, coffee take out bar.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 contact-section1-address">
+                <h3>Our Address</h3>
+                <p>Alnahas Building, 2 AlBahr St, Tanta AlGharbia, Egypt.</p>
+                <a href="">GET DIRECTIONS</a>
+              </div>
+              <div class="col-12 col-md-6 mb-4 contact-section1-phone">
+                <h3>Our Phone</h3>
+                <p>
+                  Office Telephone : 002 01065370701 <br />Mobile : 002
+                  01065370701
+                </p>
+
+                <a href="">CALL US</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 contact-section1-mail">
+                <h3>Our Email</h3>
+                <p>
+                  Main Email : support@farost.net Inquiries : info@farost.net
+                </p>
+
+                <a href="">SEND A MESSAGE</a>
+              </div>
+              <div class="col-12 col-md-6 mb-4 contact-section1-social">
+                <h3>Follow us</h3>
+                <div class="social">
+                  <ul>
+                    <li class="facebook">
+                      <button class="footer-social-btn">
+                        <i
+                          class="fa-brands fa-facebook-f"
+                          style="color: #ffffff"
+                        ></i>
+                      </button>
+                    </li>
+                    <li class="twitter">
+                      <button class="footer-social-btn">
+                        <i
+                          class="fa-brands fa-twitter"
+                          style="color: #ffffff"
+                        ></i>
+                      </button>
+                    </li>
+                    <li class="linkedin">
+                      <button class="footer-social-btn">
+                        <i
+                          class="fa-brands fa-linkedin-in"
+                          style="color: #ffffff"
+                        ></i>
+                      </button>
+                    </li>
+                    <li class="pinterest">
+                      <button class="footer-social-btn">
+                        <i
+                          class="fa-brands fa-pinterest"
+                          style="color: #ffffff"
+                        ></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column left end -->
+
+          <!-- Column right -->
+          <div class="col-12 col-lg-6 right-col">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 right-col-box">
+                <input
+                  type="text"
+                  name="firstName"
+                  id="first-name"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col-12 col-md-6 mb-4 right-col-box">
+                <input
+                  type="text"
+                  name="lastName"
+                  id="last-name"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4 right-col-box">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-12 col-md-6 mb-4 right-col-box">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                />
+              </div>
+            </div>
+            <div class="row row-message">
+              <div class="col-12" style="max-height: 150px">
+                <input
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button class="custom-btn-6 container-fluid">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#222"
+        width="128.125"
+        class="footer-divider"
+        height="13.5"
+        viewBox="0 0 128.125 13.5"
+      >
+        <path
+          data-name="Divder Down"
+          d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z"
+          transform="translate(-735.938 -518)"
+        ></path>
+      </svg>
+      <div class="row footer-top">
+        <div class="col-12 col-md-4 social-col">
+          <h4>FOLLOW US</h4>
+          <div class="social">
+            <ul>
+              <li class="facebook">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+                </button>
+              </li>
+              <li class="twitter">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+                </button>
+              </li>
+              <li class="linkedin">
+                <button class="footer-social-btn">
+                  <i
+                    class="fa-brands fa-linkedin-in"
+                    style="color: #ffffff"
+                  ></i>
+                </button>
+              </li>
+              <li class="pinterest">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-pinterest" style="color: #ffffff"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 middle-col">
+          <img src="./imgs/steakin-logo-light.png" alt="" />
+          <div class="middle-col-description">
+            Steak In has the perfect place to enjoy fine food and great
+            cocktails with excellent service, in comfortable atmospheric
+            surroundings. We have a soft dining room, combined with an open
+            kitchen, coffee take out bar.
+          </div>
+        </div>
+        <div class="col-12 col-md-4 right-col">
+          <div class="right-col-x">
+            <div class="right-col-heading">NEWSLATTER</div>
+            <div class="search-div">
+              <input
+                type="text"
+                id="footer-search"
+                placeholder="Subscribe Our Newspaper"
+              />
+              <div class="btn-div">
+                <button class="footer-search-btn">JOIN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <div>
+          2 AlBahr St, Tanta, Egypt - 002 01065370701 - support@farost.net
+        </div>
+        <div>
+          © 2024. Steak In, With Love by
+          <span class="footer-bottom-span">Farost</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

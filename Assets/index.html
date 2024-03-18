@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!-- Right News Tab -->
+    <div class="right-news-menu" id="rightNewsMenu">
+      <div class="exit-tab text-end">
+        <a class="exit-tab-icon" id="exitTabIcon"><strong>x</strong></a>
+      </div>
+
+      <div class="tab-recent-posts">
+        <h5>Recent Posts</h5>
+      </div>
+
+      <div class="tab-insta">
+        <h5>Instagram</h5>
+      </div>
+
+      <div class="tab-tag-cloud">
+        <h5>Tag Cloud</h5>
+      </div>
+    </div>
+
+
+
+    <!-- Second navbar -->
+    <nav class="justify-content-between justify-content-lg-around second-navbar" id="second-navbar">
+      <!-- For logo -->
+      <div class="nav-logo">
+        <a href="">
+          <img src="./imgs/steakin-logo-dark.png" alt="logo-dark" />
+        </a>
+      </div>
+
+      <!-- Navbar right part -->
+      <div class="navbar-right d-flex justify-content-between">
+        <!-- Pages -->
+        <div class="nav-pages d-none d-lg-flex justify-content-between me-3">
+          <ul>
+            <li id="home-page">
+              <a href="./index.html" class="active-page nav-link" >HOME</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./index.html">Home One</a></li>
+                  <li><a href="">Home Two</a></li>
+                  <li><a href="">Home Three</a></li>
+                  <li><a href="">Loading page</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="pages-page">
+              <a href="" >PAGES</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./our-story.html">Our Story</a></li>
+                  <li><a href="./our-chefs.html">Our Chefs</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Reservation</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">404 page</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="menu-page">
+              <a href="./menu-grid.html" >MENU</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./menu-grid.html">Menu Grid</a></li>
+                  <li><a href="">Menu Board</a></li>
+                  <li><a href="">Menu Gallery</a></li>
+                  <li><a href="">Menu Simple</a></li>
+                </ul>
+              </div>
+            </li>
+            <li id="blog-page">
+              <a href="" >BLOG</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="">Blog Grid</a></li>
+                  <li><a href="">Blog Standart</a></li>
+                  <li><a href="">Blog details</a></li>
+        
+                </ul>
+              </div>
+            </li>
+            <li id="shop-page">
+              <a href="" >SHOP</a>
+              <div class="dropmenu">
+                <ul>
+                  <li><a href="./shop-full-width.html">Shop Full width</a></li>
+                  <li><a href="">Shop Sidebar Left</a></li>
+                  <li><a href="">Shop Sidebar Right</a></li>
+                  <li><a href="">Shop details</a></li>
+                  <li><a href="">Shop cart</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./contact.html">CONTACT</a>
+            </li>
+            <li>
+              <button class="custom-btn">BOOK A TABLE</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navbar right icon group -->
+        <div
+          class="navbar-right-icons d-flex justify-content-between ms-1"
+        >
+          <span class="d-none d-lg-block">
+            <i class="fa fa-search" style="color: black"></i>
+          </span>
+          <span class="d-none d-lg-block">
+            <i class="fa fa-shopping-cart" style="color: black"></i>
+          </span>
+          <!-- Dropdown -->
+          <span class="nav-dropdown" id="navDropdown">
+            <!-- <i class="fa-solid fa-bars" style="color: #ffff"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+ 
+          </span>
+        </div>
+      </div>
+      
+      <!-- Pages Dropdown start -->
+      <div class="pages-dropdown-menu" id="pagesDropdownMenu">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Home
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./index.html">Home One</a></li>
+                  <li><a href="">Home Two</a></li>
+                  <li><a href="">Home Three</a></li>
+                  <li><a href="">Loading page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Pages
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./our-story.html">Our Story</a></li>
+                  <li><a href="./our-chefs.html">Our Chefs</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Reservation</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">404 page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Menu
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./menu-grid.html">Menu Grid</a></li>
+                  <li><a href="">Menu Board</a></li>
+                  <li><a href="">Menu Gallery</a></li>
+                  <li><a href="">Menu Simple</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Blog
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">Blog Grid</a></li>
+                  <li><a href="">Blog Standart</a></li>
+                  <li><a href="">Blog details</a></li>
+        
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Shop
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="./shop-full-width.html">Shop Full width</a></li>
+                  <li><a href="">Shop Sidebar Left</a></li>
+                  <li><a href="">Shop Sidebar Right</a></li>
+                  <li><a href="">Shop details</a></li>
+                  <li><a href="">Shop cart</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item accordion-contact">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" >
+                Contact
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- Pages Dropdown end -->
+    </nav>
+
+
+
+
+
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="d-flex justify-content-between justify-content-lg-around">
+        <!-- For logo -->
+        <div class="nav-logo">
+          <a href="">
+            <img src="./imgs/steakin-logo-light.png" alt="logo-dark" />
+          </a>
+        </div>
+
+        <!-- Navbar right part -->
+        <div class="navbar-right d-flex justify-content-between">
+          <!-- Pages -->
+          <div class="nav-pages d-none d-lg-flex justify-content-between me-3">
+            <ul>
+              <li id="home-page">
+                <a href="./index.html" class="active-page nav-link" >HOME</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./index.html">Home One</a></li>
+                    <li><a href="">Home Two</a></li>
+                    <li><a href="">Home Three</a></li>
+                    <li><a href="">Loading page</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li id="pages-page">
+                <a href="" >PAGES</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./our-story.html">Our Story</a></li>
+                    <li><a href="./our-chefs.html">Our Chefs</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">404 page</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li id="menu-page">
+                <a href="./menu-grid.html" >MENU</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./menu-grid.html">Menu Grid</a></li>
+                    <li><a href="">Menu Board</a></li>
+                    <li><a href="">Menu Gallery</a></li>
+                    <li><a href="">Menu Simple</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li id="blog-page">
+                <a href="" >BLOG</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="">Blog Grid</a></li>
+                    <li><a href="">Blog Standart</a></li>
+                    <li><a href="">Blog details</a></li>
+          
+                  </ul>
+                </div>
+              </li>
+              <li id="shop-page">
+                <a href="" >SHOP</a>
+                <div class="dropmenu">
+                  <ul>
+                    <li><a href="./shop-full-width.html">Shop Full width</a></li>
+                    <li><a href="">Shop Sidebar Left</a></li>
+                    <li><a href="">Shop Sidebar Right</a></li>
+                    <li><a href="">Shop details</a></li>
+                    <li><a href="">Shop cart</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./contact.html">CONTACT</a>
+              
+              </li>
+              <li>
+                <button class="custom-btn">BOOK A TABLE</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Navbar right icon group -->
+          <div
+            class="navbar-right-icons d-flex justify-content-between ms-1"
+          >
+            <span class="d-none d-lg-block">
+              <i class="fa fa-search" style="color: #ffff"></i>
+            </span>
+            <span class="d-none d-lg-block">
+              <i class="fa fa-shopping-cart" style="color: #ffff"></i>
+            </span>
+            <!-- Dropdown -->
+            <span class="nav-dropdown" id="navDropdown">
+              <!-- <i class="fa-solid fa-bars" style="color: #ffff"></i> -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+   
+            </span>
+          </div>
+        </div>
+
+        
+      </nav>
+
+
+      
+
+      <!-- Slider main container -->
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first-swiper">
+            <div class="over-written">
+              <h3>Welcome To Steak In</h3>
+              <h1>We Are Food Masters!</h1>
+              <p>
+                Steak In has the perfect place to enjoy fine food and great
+                cocktails with excellent service,
+                <br />
+                in comfortable atmospheric surroundings.
+              </p>
+              <div
+                class="d-flex justify-content-center slider-descrription-buttons mt-3 gap-2"
+              >
+                <button class="custom-btn-3">BOOK YOUR TABLE NOW</button>
+              </div>
+            </div>
+            <img src="./imgs/bg-slider1.jpg" alt="" class="slideI" />
+          </div>
+          <div class="swiper-slide">
+            <div class="over-written">
+              <h3>Steak In Offers You</h3>
+              <h1>Fresh & Tasty Meals</h1>
+              <p>
+                Steak In has the perfect place to enjoy fine food and great
+                cocktails with excellent service,
+                <br />
+                in comfortable atmospheric surroundings.
+              </p>
+              <div
+                class="d-flex justify-content-center slider-descrription-buttons mt-3 gap-2"
+              >
+                <button class="custom-btn-4">VIEW MENU</button>
+                <button class="custom-btn-3">BOOK A TABLE</button>
+              </div>
+            </div>
+            <img src="./imgs/bg-slider2.jpg" alt="" class="slideI" />
+          </div>
+          <div class="swiper-slide">
+            <div class="over-written">
+              <img
+                src="./imgs/slider-logo.png"
+                alt=""
+                style="width: 69px; height: 48px; margin-bottom: 1rem"
+              />
+              <h3>Creative & Talented Chefs</h3>
+              <h1>Real & Delicious Food</h1>
+              <p>
+                Steak In has the perfect place to enjoy fine food and great
+                cocktails with excellent service,
+                <br />
+                in comfortable atmospheric surroundings.
+              </p>
+            </div>
+            <img src="./imgs/bg-slider3.jpg" alt="" class="slideI" />
+          </div>
+        </div>
+
+        <img
+          src="./imgs/slider-arrow-left.png"
+          alt="left-arrow"
+          class="left-arrow"
+        />
+
+        <img
+          src="./imgs/slider-arrow-right.png"
+          alt="right-arrow"
+          class="right-arrow"
+        />
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+    </header>
+
+    
+
+    <!-- Home Main -->
+    <main>
+      <!-- Section1 start-->
+      <section class="section1 px-0 px-md-6">
+        <div class="section1-box">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-6 section1-left">
+              <h4 class="section1-hello">Hello dear!</h4>
+              <h3 class="section1-motto">We Are Steak In!</h3>
+              <div>
+                <i class="h-icon">
+                  <img src="./imgs/h-icon1.png" alt="" />
+                </i>
+              </div>
+              <div class="section1-description">
+                Steak In has the perfect place to enjoy fine food and great
+                cocktails with excellent service, in comfortable atmospheric
+                surroundings. We have a soft dining room, combined with an open
+                kitchen, coffee take out bar and alovely awesome on site coffee
+                roastery.
+              </div>
+
+              <div>
+                <button class="custom-btn-2">BOOK A TABLE</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 row d-flex align-items-baseline">
+              <!-- Section 1 Image 1 -->
+              <div class="col-12 col-md-6">
+                <img class="" src="./imgs/home1-about1.jpg" alt="" />
+              </div>
+
+              <!-- Section 2 Image 2 -->
+              <div class="col-12 col-md-6">
+                <img class="" src="./imgs/home1-about2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section-1 end -->
+
+      <!-- Section 2 start -->
+      <section class="section2">
+        <div class="divider-top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128.125"
+            height="13.5"
+            viewBox="0 0 128.125 13.5"
+            style="transform: rotate(180deg)"
+          >
+            <path
+              fill="#fff"
+              data-name="Divder Down"
+              d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z"
+              transform="translate(-735.938 -518)"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="container section2-wrapper">
+          <div>
+            <h4>Delicious Recipes</h4>
+          </div>
+          <div>
+            <h3>Our Special Dishes</h3>
+          </div>
+          <div>
+            <i class="h-icon">
+              <img src="./imgs/h-icon1.png" alt="" />
+            </i>
+          </div>
+
+          <!-- Meals / dishes start-->
+          <div class="text-center">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <!-- Item 1 -->
+                <div class="container row menu-item mb-4 mt-4">
+                  <!-- Item image -->
+                  <div class="col-12 col-sm-3 menu-item-image">
+                    <!-- Item Overlay -->
+                    <div class="item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-1.jpg" alt="fillet" />
+                  </div>
+                  <div class="col-12 col-sm-9 menu-item-info">
+                    <div
+                      class=".d-flex justify-content-between menu-item-info-head"
+                    >
+                      <div class="menu-item-info-head-name">
+                        <h5>Grilled American Fillet</h5>
+                      </div>
+                      <div class="menu-item-info-head-price">$31.95</div>
+                    </div>
+                    <div class="menu-item-info-bottom">
+                      <div class="col menu-item-info-bottom-info">
+                        Pork fillet, ginger, garlic, honey, pepper & canola
+                        oil.creamy chesapeake crab dip...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 1 end -->
+              </div>
+
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <!-- Item 2 -->
+                <div class="container row menu-item mb-4 mt-4">
+                  <!-- Item image -->
+                  <div class="col-12 col-sm-3 menu-item-image">
+                    <!-- Item Overlay -->
+                    <div class="item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-2.jpg" alt="fillet" />
+                  </div>
+                  <div class="col-12 col-sm-9 menu-item-info">
+                    <div
+                      class=".d-flex justify-content-between menu-item-info-head"
+                    >
+                      <div class="menu-item-info-head-name">
+                        <h5>Grilled Seafood Paella</h5>
+                      </div>
+                      <div class="menu-item-info-head-price">$39.95</div>
+                    </div>
+                    <div class="menu-item-info-bottom">
+                      <div class="col menu-item-info-bottom-info">
+                        Monkfish, onion, paella rice, garlic & smoked paprika,
+                        creamy chesapeake crab dip...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 end -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <!-- Item 3 -->
+                <div class="container row menu-item mb-4 mt-4">
+                  <!-- Item image -->
+                  <div class="col-12 col-sm-3 menu-item-image">
+                    <!-- Item Overlay -->
+                    <div class="item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-3.jpg" alt="fillet" />
+                  </div>
+                  <div class="col-12 col-sm-9 menu-item-info">
+                    <div
+                      class=".d-flex justify-content-between menu-item-info-head"
+                    >
+                      <div class="menu-item-info-head-name">
+                        <h5>Roast Sea Trout</h5>
+                      </div>
+                      <div class="menu-item-info-head-price">$48.95</div>
+                    </div>
+                    <div class="menu-item-info-bottom">
+                      <div class="col menu-item-info-bottom-info">
+                        Roast trout, English asparagus, watercress & royals,
+                        creamy chesapeake crab dip with...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 end -->
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <!-- Item 4 -->
+                <div class="container row menu-item mb-4 mt-4">
+                  <!-- Item image -->
+                  <div class="col-12 col-sm-3 menu-item-image">
+                    <!-- Item Overlay -->
+                    <div class="item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-4.jpg" alt="fillet" />
+                  </div>
+                  <div class="col-12 col-sm-9 menu-item-info">
+                    <div
+                      class=".d-flex justify-content-between menu-item-info-head"
+                    >
+                      <div class="menu-item-info-head-name">
+                        <h5>Smoked Paprika Hum</h5>
+                      </div>
+                      <div class="menu-item-info-head-price">$20.95</div>
+                    </div>
+                    <div class="menu-item-info-bottom">
+                      <div class="col menu-item-info-bottom-info">
+                        Red peppers, roasted garlic, lemon slices, olives &
+                        mint, creamy crab dip...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 1 end -->
+              </div>
+            </div>
+          </div>
+          <!-- Meals / dishes end -->
+        </div>
+        <!-- Divider bottom -->
+        <div class="divider-bottom">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128.125"
+            height="13.5"
+            viewBox="0 0 128.125 13.5"
+          >
+            <path
+              fill="#fff"
+              data-name="Divder Down"
+              d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z"
+              transform="translate(-735.938 -518)"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <!-- Section 2 end -->
+
+      <!-- Section 3 -->
+      <section class="section3">
+        <!-- Top part of Section 3 -->
+        <div class="section3-top">
+          <h4>Fresh, Tasty Meals</h4>
+          <h3>Discover Our Menu</h3>
+          <div>
+            <i class="h-icon">
+              <img src="./imgs/h-icon1.png" alt="" />
+            </i>
+          </div>
+          <div class="section3-description mb-5">
+            Steak In has the perfect place to enjoy fine food and great
+            cocktails with excellent service, in comfortable atmospheric
+            surroundings. We have a soft dining room, combined with an open
+            kitchen, coffee take out bar and alovely awesome on site coffee
+            roastery.
+          </div>
+        </div>
+
+        <!-- Bottom part of Section 3 -->
+        <div class="section3-bottom">
+          <div class="section3-bottom-nav nav-pages mb-4">
+            <ul>
+              <li><a href="">All </a></li>
+              <li><a href="">Breakfast</a></li>
+              <li><a href="">Dessert</a></li>
+              <li><a href="">Dinner</a></li>
+              <li><a href="">Drinks</a></li>
+              <li><a href="">Lunch</a></li>
+            </ul>
+          </div>
+
+          <!-- Menu of Bottom Section 3 -->
+          <div class="section3-bottom-menu">
+            <div>
+              <div class="row menu-row">
+                <!-- Item 1 -->
+                <div
+                  class="col-12 col-lg-6 row section3-bottom-menu-item item-first"
+                >
+                  <div
+                    class="col-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <!-- Price -->
+                    <div class="section3-bottom-menu-item-left-price">
+                      $31.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Grilled American Fillet
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Pork fillet, ginger, garlic, honey, pepper & canola
+                      oil.creamy chesapeake crab dip with artichoke, baked and
+                      topped with cheddar cheese,...
+                    </div>
+                  </div>
+                  <!-- Image -->
+                  <div class="col-6 section3-bottom-menu-item-right custom-col">
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-1.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Item 1 end -->
+
+                <!-- Item 1 conditional -->
+                <div
+                  class="col-12 col-lg-6 row section3-bottom-menu-item item-first-conditional"
+                >
+                  <!-- Image -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-right custom-col"
+                  >
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                    "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-1.jpg" alt="" />
+                  </div>
+
+                  <!-- Price -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="section3-bottom-menu-item-left-price">
+                      $31.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Grilled American Fillet
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Pork fillet, ginger, garlic, honey, pepper & canola
+                      oil.creamy chesapeake crab dip with artichoke, baked and
+                      topped with cheddar cheese,...
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 1 conditional end -->
+
+                <!-- Item 2 -->
+                <div
+                  class="col-12 col-lg-6 row section3-bottom-menu-item item-second"
+                >
+                  <div
+                    class="col-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <!-- Price -->
+                    <div class="section3-bottom-menu-item-left-price">
+                      $39.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Grilled Seafood Paella
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Monkfish, onion, paella rice, garlic & smoked paprika,
+                      creamy chesapeake crab dip with artichoke, baked and
+                      topped with cheddar cheese,...
+                    </div>
+                  </div>
+                  <div class="col-6 section3-bottom-menu-item-right custom-col">
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-2.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Item-2 end -->
+
+                <!-- Item 2 conditional -->
+                <div
+                  class="col-12 col-lg-6 row section3-bottom-menu-item item-second-conditional"
+                >
+                  <!-- Image -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-right custom-col"
+                  >
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                    "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-2.jpg" alt="" />
+                  </div>
+
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <!-- Price -->
+                    <div class="section3-bottom-menu-item-left-price">
+                      $39.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Grilled Seafood Paella
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Monkfish, onion, paella rice, garlic & smoked paprika,
+                      creamy chesapeake crab dip with artichoke, baked and
+                      topped with cheddar cheese,...
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 conditional end -->
+              </div>
+
+              <!-- Second Row or Reverse row-->
+              <div class="row menu-row">
+                <!-- Item 3 -->
+                <div
+                  class="col-12 col-lg-6 row section3-bottom-menu-item item-third"
+                >
+                  <!-- Image -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-right custom-col"
+                  >
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                    "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-3.jpg" alt="" />
+                  </div>
+
+                  <!-- Price -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="section3-bottom-menu-item-left-price">
+                      $48.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Roast Sea Trout
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Roast trout, English asparagus, watercress & royals,
+                      creamy chesapeake crab dip with artichoke, baked and
+                      topped with cheddar cheese, with...
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 end -->
+
+                <!-- Item 3 conditional-->
+                <div
+                  class="col-12 col-lg-6 row section3-bottom-menu-item item-third-conditional"
+                >
+                  <!-- Price -->
+                  <div
+                    class="col-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="section3-bottom-menu-item-left-price">
+                      $48.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Roast Sea Trout
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Roast trout, English asparagus, watercress & royals,
+                      creamy chesapeake crab dip with artichoke, baked and
+                      topped with cheddar cheese, with...
+                    </div>
+                  </div>
+                  <!-- Image -->
+                  <div class="col-6 section3-bottom-menu-item-right custom-col">
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                      "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-1.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Item 3 conditional -->
+
+                <!-- Item 4 -->
+                <div class="col-12 col-lg-6 row section3-bottom-menu-item">
+                  <!-- Image -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-right custom-col"
+                  >
+                    <div class="section3-item-overlay">
+                      <a
+                        href="
+                    "
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
+                    </div>
+                    <img src="./imgs/menu-item-4.jpg" alt="" />
+                  </div>
+
+                  <!-- Price -->
+                  <div
+                    class="col-12 col-sm-6 section3-bottom-menu-item-left d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div class="section3-bottom-menu-item-left-price">
+                      $20.95
+                    </div>
+                    <!-- Heading -->
+                    <h3 class="section3-bottom-menu-item-left-heading">
+                      Smoked Paprika Hum
+                    </h3>
+                    <!-- Icon -->
+                    <div>
+                      <i class="h-icon">
+                        <img src="./imgs/h-icon1.png" alt="" />
+                      </i>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="section3-bottom-menu-item-left-description">
+                      Red peppers, roasted garlic, lemon slices, olives & mint,
+                      creamy crab dip with artichoke, baked and topped with
+                      cheddar cheese,...
+                    </div>
+                  </div>
+                </div>
+                <!-- Item-4 end -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="custom-btn-5 mt-5">DISCOVER FULL MENU</button>
+      </section>
+      <!-- Section 3 end -->
+
+      <!-- Section 4 start -->
+      <section class="section4">
+        <div class="section4-content">
+          <div class="divider-bottom">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="128.125"
+              height="13.5"
+              viewBox="0 0 128.125 13.5"
+            >
+              <path
+                fill="#fff"
+                data-name="Divder Down"
+                d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z"
+                transform="translate(-735.938 -518)"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="divider-top">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="128.125"
+              height="13.5"
+              viewBox="0 0 128.125 13.5"
+              style="rotate: 180deg"
+            >
+              <path
+                fill="#fff"
+                data-name="Divder Down"
+                d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z"
+                transform="translate(-735.938 -518)"
+              ></path>
+            </svg>
+          </div>
+          <div class="section4-content-wrapper">
+            <h3 class="section4-h3">Testimonials</h3>
+            <h2 class="section4-h2">Happy Customers</h2>
+            <div>
+              <i class="h-icon">
+                <img src="./imgs/h-icon1.png" alt="" />
+              </i>
+            </div>
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- Card for comments -->
+                  <div class="section4-card">
+                    <div class="five-stars">
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    </div>
+                    <div class="comment">
+                      What I've enjoyed most, though, is meeting people who have
+                      a real interest in food and sharing ideas with them. Good
+                      food is a global and amazing thing.
+                    </div>
+                    <div class="profile-picture">
+                      <img src="./imgs/testimonial1.jpg" alt="" />
+                    </div>
+                    <div class="commenter">Ahmed Ibraheem</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Card for comments -->
+                  <div class="section4-card">
+                    <div class="five-stars">
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    </div>
+                    <div class="comment">
+                      We're all moving at such a high rate that we have to grab
+                      the frozen dinners, we can't make it a way of life. We
+                      have to get back to real, simple, clean good foods.
+                    </div>
+                    <div class="profile-picture">
+                      <img src="./imgs/testimonial2.jpg" alt="" />
+                    </div>
+                    <div class="commenter">Mahmoud Baghagho</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Card for comments -->
+                  <div class="section4-card">
+                    <div class="five-stars">
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    </div>
+                    <div class="comment">
+                      I don't like food that's too carefully arranged; it makes
+                      me think that the chef is spending too much time arranging
+                      and not enough time cooking.
+                    </div>
+                    <div class="profile-picture">
+                      <img src="./imgs/testimonial3.jpg" alt="" />
+                    </div>
+                    <div class="commenter">Fouad badawy</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Card for comments -->
+                  <div class="section4-card">
+                    <div class="five-stars">
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    </div>
+                    <div class="comment">
+                      What I've enjoyed most, though, is meeting people who have
+                      a real interest in food and sharing ideas with them. Good
+                      food is a global and amazing thing.
+                    </div>
+                    <div class="profile-picture">
+                      <img src="./imgs/testimonial1.jpg" alt="" />
+                    </div>
+                    <div class="commenter">Ahmed Ibraheem</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Card for comments -->
+                  <div class="section4-card">
+                    <div class="five-stars">
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    </div>
+                    <div class="comment">
+                      We're all moving at such a high rate that we have to grab
+                      the frozen dinners, we can't make it a way of life. We
+                      have to get back to real, simple, clean good foods.
+                    </div>
+                    <div class="profile-picture">
+                      <img src="./imgs/testimonial2.jpg" alt="" />
+                    </div>
+                    <div class="commenter">Mahmoud Baghagho</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Card for comments -->
+                  <div class="section4-card">
+                    <div class="five-stars">
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                      <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                    </div>
+                    <div class="comment">
+                      I don't like food that's too carefully arranged; it makes
+                      me think that the chef is spending too much time arranging
+                      and not enough time cooking.
+                    </div>
+                    <div class="profile-picture">
+                      <img src="./imgs/testimonial3.jpg" alt="" />
+                    </div>
+                    <div class="commenter">Fouad badawy</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 end -->
+
+      <!-- Section 5 start -->
+      <section class="section5">
+        <div class="section5-content">
+          <h3>Stay Updated</h3>
+          <h2>Latest New & Events</h2>
+          <div>
+            <i class="h-icon">
+              <img src="./imgs/h-icon1.png" alt="" />
+            </i>
+          </div>
+          <!-- Blog Swipe -->
+          <div class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!-- Item 1 -->
+                <div class="section5-item">
+                  <div class="section5-item-top">
+                    <span class="span-date">October 12, 2018</span> /
+                    <span class="span-food">Flour Monday</span>
+                  </div>
+                  <div class="section5-item-heading">
+                    <h4>The Great Monday Breakfast</h4>
+                  </div>
+                  <div class="section5-item-image">
+                    <img src="./imgs/blog-6.jpg" alt="" />
+                  </div>
+                  <div class="section5-item-description">
+                    Last weekend we enjoyed a wonderful little bike tour in the
+                    countryside. the light was simply stunning and even, if it was
+                    almost as cold as in winter, it was such a lovely autumn mood. the
+                    colors, the…
+                  </div>
+                  <button class="custom-btn-5">READ MORE</button>
+                </div>
+                <!-- Item 1 end -->
+              </div>
+              <div class="swiper-slide">               
+                <!-- Item 2 -->
+                <div class="section5-item">
+                  <div class="section5-item-top">
+                    <span class="span-date">October 12, 2018</span> /
+                    <span class="span-food">Lemon Sauce Sweet</span>
+                  </div>
+                  <div class="section5-item-heading">
+                    <h4>The Great Sauces Ever!</h4>
+                  </div>
+                  <div class="section5-item-image">
+                    <img src="./imgs/blog-3.jpg" alt="" />
+                  </div>
+                  <div class="section5-item-description">
+                    Last weekend we enjoyed a wonderful little bike tour in the
+                    countryside. the light was simply stunning and even, if it was
+                    almost as cold as in winter, it was such a lovely autumn mood. the
+                    colors, the…
+                  </div>
+                  <button class="custom-btn-5">READ MORE</button>
+                </div>
+                <!-- Item 2 end -->
+              </div>
+              <div class="swiper-slide">
+                <!-- Item 3 -->
+                <div class="section5-item">
+                  <div class="section5-item-top">
+                    <span class="span-date">October 12, 2018</span> /
+                    <span class="span-food">Cheese Food</span>
+                  </div>
+                  <div class="section5-item-heading">
+                    <h4>How To Keep Your Food Fresh?</h4>
+                  </div>
+                  <div class="section5-item-image">
+                    <img src="./imgs/blog-2.jpg" alt="" />
+                  </div>
+                  <div class="section5-item-description">
+                    Last weekend we enjoyed a wonderful little bike tour in the
+                    countryside. the light was simply stunning and even, if it was
+                    almost as cold as in winter, it was such a lovely autumn mood. the
+                    colors, the…
+                  </div>
+                  <button class="custom-btn-5">READ MORE</button>
+                </div>
+                <!-- Item 3 end -->
+              </div>
+              <div class="swiper-slide">
+                <!-- Item 4 -->
+                <div class="section5-item">
+                  <div class="section5-item-top">
+                    <span class="span-date">October 12, 2018</span> /
+                    <span class="span-food">Flour Meat</span>
+                  </div>
+                  <div class="section5-item-heading">
+                    <h4>How To Make Meat Bread?</h4>
+                  </div>
+                  <div class="section5-item-image">
+                    <img src="./imgs/blog-1.jpg" alt="" />
+                  </div>
+                  <div class="section5-item-description">
+                    Last weekend we enjoyed a wonderful little bike tour in the
+                    countryside. the light was simply stunning and even, if it was
+                    almost as cold as in winter, it was such a lovely autumn mood. the
+                    colors, the…
+                  </div>
+                  <button class="custom-btn-5">READ MORE</button>
+                </div>
+                <!-- Item 4 end -->
+              </div>
+              
+              <div class="swiper-slide">
+                <!-- Item 5 -->
+                <div class="section5-item">
+                  <div class="section5-item-top">
+                    <span class="span-date">October 6, 2018</span> /
+                    <span class="span-food">Food Monday</span>
+                  </div>
+                  <div class="section5-item-heading">
+                    <h4>The Best Restaurants in Canada</h4>
+                  </div>
+                  <div class="section5-item-image">
+                    <img src="./imgs/blog-4.jpg" alt="" />
+                  </div>
+                  <div class="section5-item-description">
+                    Last weekend we enjoyed a wonderful little bike tour in the
+                    countryside. the light was simply stunning and even, if it was
+                    almost as cold as in winter, it was such a lovely autumn mood. the
+                    colors, the…
+                  </div>
+                  <button class="custom-btn-5">READ MORE</button>
+                </div>
+                <!-- Item 5 end -->
+              </div>
+
+              <div class="swiper-slide">
+                <!-- Item 6 -->
+                <div class="section5-item">
+                  <div class="section5-item-top">
+                    <span class="span-date">October 5, 2018</span> /
+                    <span class="span-food">Flour Sweet</span>
+                  </div>
+                  <div class="section5-item-heading">
+                    <h4>Awesome Sweet Cakes</h4>
+                  </div>
+                  <div class="section5-item-image">
+                    <img src="./imgs/blog-5.jpg" alt="" />
+                  </div>
+                  <div class="section5-item-description">
+                    Last weekend we enjoyed a wonderful little bike tour in the
+                    countryside. the light was simply stunning and even, if it was
+                    almost as cold as in winter, it was such a lovely autumn mood. the
+                    colors, the…
+                  </div>
+                  <button class="custom-btn-5">READ MORE</button>
+                </div>
+                <!-- Item 6 end -->
+              </div>
+              
+            </div>
+            
+          </div>
+
+        
+          
+
+        
+      </section>
+      <!-- Section 5 end -->
+    </main>
+    <!-- Main end -->
+
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#222" width="128.125" class="footer-divider" height="13.5" viewBox="0 0 128.125 13.5"> <path data-name="Divder Down" d="M800,518c-8.782,15.986-46.811,11.315-56,12-35.126,2.618,56,1,56,1V518Zm0,0c8.782,15.986,46.811,11.315,56,12,35.126,2.618-56,1-56,1V518Z" transform="translate(-735.938 -518)"></path> </svg>
+      <div class="row footer-top">  
+       <div class="col-12 col-md-4 social-col">
+          <h4>FOLLOW US</h4>
+          <div class="social">
+            <ul>
+              <li class="facebook">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                </button>
+              </li>
+              <li class="twitter">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </button>
+              </li>
+              <li class="linkedin">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                </button>
+              </li>
+              <li class="pinterest">
+                <button class="footer-social-btn">
+                  <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 middle-col">
+          <img src="./imgs/steakin-logo-light.png" alt="">
+          <div class="middle-col-description">
+            Steak In has the perfect place to enjoy fine food and great cocktails with excellent service, in comfortable atmospheric surroundings. We have a soft dining room, combined with an open kitchen, coffee take out bar.
+          </div>
+        </div>
+        <div class="col-12 col-md-4 right-col">
+          <div class="right-col-x">
+            <div class="right-col-heading">NEWSLATTER</div>
+            <div class="search-div">
+              <input type="text" id="footer-search" placeholder="Subscribe Our Newspaper"/>
+              <div class="btn-div">
+                <button class="footer-search-btn">JOIN</button>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <div>2 AlBahr St, Tanta, Egypt - 002 01065370701 - support@farost.net</div>
+        <div>© 2024. Steak In, With Love by <span class="footer-bottom-span">Farost</span></div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

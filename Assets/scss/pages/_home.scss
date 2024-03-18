@@ -1,0 +1,454 @@
+.h-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+}
+
+.section1 {
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  .section1-left {
+    text-align: center;
+  }
+
+  .section1-hello {
+    font-family: $ruthie;
+    color: $brown-custom;
+    font-size: 4rem;
+  }
+
+  .section1-motto {
+    font-family: $fatface;
+    font-size: 3rem;
+  }
+
+  .section1-description {
+    color: #a5a5a5;
+    margin-bottom: 1.5rem;
+  }
+
+  button {
+    margin-bottom: 1rem;
+  }
+
+  .col-12 img {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  @media (min-width: 991px) and (max-width: 1200px) {
+    .section1-box {
+      width: 950px;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .section1-box {
+      width: 1180px;
+      margin: auto;
+    }
+  }
+}
+
+.section2 {
+  position: relative;
+  width: 100%;
+  padding: 6rem 1rem;
+  background-image: url(https://demo.farost.net/steakin/wp-content/uploads/2019/04/bg-parallax6.jpg);
+
+  &-wrapper {
+    max-width: 1150px;
+    background-color: white;
+    padding: 3rem 2rem 2rem 2rem;
+    text-align: center;
+    margin: auto;
+
+    h4 {
+      font-family: $ruthie;
+      color: $brown-custom;
+      font-size: 3rem;
+    }
+    h3 {
+      font-family: $fatface;
+      font-size: 3rem;
+    }
+  }
+
+  .menu-item {
+    text-align: start;
+
+    &-image {
+      display: flex;
+      align-items: baseline;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .item-overlay {
+        position: absolute;
+        visibility: hidden;
+        top: 50%;
+        left: 50%;
+        @include centrelizeViaFlex();
+        width: calc(100% - 24px);
+        height: 100%;
+        transform: translate(-50%, -50%);
+        background-color: rgba($color: #000000, $alpha: 0.5);
+
+        a {
+          margin: 0;
+          color: white;
+          padding: 8px 12px;
+          background-color: $brown-custom;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &:hover .item-overlay {
+      visibility: visible;
+    }
+
+    &-info {
+      &-head {
+        border-bottom: 1px dashed gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-weight: bold;
+        padding-bottom: 0.4rem;
+        margin-bottom: 0.4rem;
+        &-price {
+          color: $brown-custom;
+        }
+      }
+
+      &-bottom-info {
+        font-size: 13px;
+        color: #666666;
+      }
+    }
+  }
+
+  .divider-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -35%);
+  }
+
+  .divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20%);
+  }
+
+  @media (max-width: 768px) {
+    .section2-wrapper {
+      h3,
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.section3 {
+  width: 100%;
+  text-align: center;
+  @include centrelizeViaFlex();
+  padding: 6rem 0rem;
+  flex-direction: column;
+
+  &-top {
+    margin: auto;
+  }
+
+  h4 {
+    font-size: 45px;
+    font-family: $ruthie;
+    color: $brown-custom;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 45px;
+    font-family: $fatface;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-description {
+    margin: auto;
+    max-width: 670px;
+    color: #a5a5a5;
+    font-size: 15px;
+  }
+
+  &-bottom {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-nav {
+      max-width: 700px;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      ul > li > a {
+        color: black;
+      }
+    }
+
+    &-menu {
+      box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
+      .menu-row {
+        padding-left: 2.5%;
+      }
+
+      &-item {
+        &-left {
+          padding: 2rem;
+          &-price {
+            font-family: $poppins;
+            font-size: 18px;
+            color: $brown-custom;
+          }
+
+          &-heading {
+            font-family: $poppins !important;
+            font-size: 20px !important;
+            max-width: 88%;
+          }
+
+          &-description {
+            max-width: 88%;
+          }
+
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            z-index: -1;
+
+            border: 1px dashed rgba(187, 147, 86, 0.75);
+          }
+        }
+
+        &:hover .section3-item-overlay {
+          visibility: visible;
+        }
+
+        &-right {
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  &-item-overlay {
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    @include centrelizeViaFlex();
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    a {
+      margin: 0;
+      color: white;
+      padding: 15px 18px;
+      background-color: $brown-custom;
+      border-radius: 50%;
+    }
+  }
+
+  .item {
+    &-first {
+      &-conditional {
+        display: none;
+      }
+    }
+
+    &-second {
+      &-conditional {
+        display: none;
+      }
+    }
+
+    &-third {
+      &-conditional {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .item-first,
+    .item-second {
+      display: none;
+    }
+
+    .item-first-conditional,
+    .item-second-conditional {
+      display: block;
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 991px) {
+    .item-second {
+      display: none;
+    }
+
+    .item-second-conditional {
+      display: flex;
+    }
+
+    .item-third {
+      display: none;
+    }
+
+    .item-third-conditional {
+      display: flex;
+    }
+  }
+
+  .custom-col {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.section4 {
+  &-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    // background-image: url(https://demo.farost.net/steakin/wp-content/uploads/2018/10/bg-parallax4.jpg);
+
+    background-image: url("../imgs/bg-parallax4.jpg");
+
+    &-wrapper {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 4rem 3rem;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .divider-top {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -40%);
+    }
+
+    .divider-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 20%);
+    }
+  }
+
+  &-h3 {
+    color: $brown-custom;
+    font-family: $ruthie;
+    font-size: 45px;
+  }
+
+  &-h2 {
+    color: white;
+    font-family: $fatface;
+    font-size: 45px;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 991px) {
+    .section4-content-wrapper {
+      padding: 2rem 0rem;
+    }
+  }
+}
+
+.section5 {
+  width: 100%;
+  &-content {
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+    padding: 6rem 4rem;
+    text-align: center;
+    h2 {
+      font-size: 45px;
+      font-family: $fatface;
+    }
+    h3 {
+      font-size: 45px;
+      font-family: $ruthie;
+      color: $brown-custom;
+    }
+  }
+
+  &-item {
+    text-align: left;
+    &-top {
+      font-size: 12px;
+      .span-date {
+        color: #686868;
+      }
+
+      .span-food {
+        color: $brown-custom-hover;
+      }
+    }
+
+    &-heading {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    &-image {
+      img {
+        object-fit: cover;
+        width: 100px;
+      }
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 1rem;
+    }
+  }
+}

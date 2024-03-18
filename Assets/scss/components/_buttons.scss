@@ -1,0 +1,106 @@
+.custom-btn {
+  background-color: $brown-custom;
+  color: white;
+  font-weight: bold;
+  padding: 0rem 0.4rem;
+  border: none;
+  &:hover {
+    background-color: $brown-custom-hover;
+    transition: 1s;
+  }
+}
+
+.custom-btn-2 {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: white;
+    background-color: $brown-custom;
+    border: 2px solid $brown-custom;
+    transition: 0.3s ease-in;
+  }
+}
+
+.custom-btn-3 {
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: white;
+    background-color: $brown-custom;
+    border: 2px solid $brown-custom;
+    transition: 0.3s ease-in;
+  }
+}
+
+.custom-btn-4 {
+  border: 2px solid $brown-custom;
+  color: white;
+  border-radius: 20px;
+  background-color: $brown-custom;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 0.3s ease-in;
+  }
+}
+
+.custom-btn-5 {
+  border: 2px solid $brown-custom;
+  color: $brown-custom;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: white;
+    background-color: $brown-custom;
+    border: 2px solid white;
+    transition: 0.3s ease-in;
+  }
+}
+
+.custom-btn-6 {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-social-btn {
+  border: none;
+  background-color: #1c1c1c;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: $brown-custom;
+    transition: 0.5s ease;
+  }
+}
+
+.footer-search-btn {
+  border: none;
+  background-color: #474747;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
